@@ -7,7 +7,7 @@ namespace DAY_9_AddressBookSystem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address book Program ");
-
+            
             while (true)
             {
                 Console.WriteLine("\n Enter your choice \n 1 for Adding Contacts \n 2 for viewing Address book" +
@@ -15,11 +15,11 @@ namespace DAY_9_AddressBookSystem
 
                 int choice = int.Parse(Console.ReadLine());
 
+                AddMultiplePerson obj4 = new AddMultiplePerson();
                 switch (choice)
                 {
                     case 1:
-                        AddTheDetails obj = new AddTheDetails();
-                        obj.EnterInput();
+                        AddMultiplePerson.EnterInput();
                         break;
 
 
